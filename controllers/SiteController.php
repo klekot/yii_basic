@@ -127,4 +127,9 @@ class SiteController extends Controller
     {
         return $this->render('hello');
     }
+
+    public function actionSay($target='World')
+    {
+        return $this->render('say', ['target' => $target]);
+    }
 }
